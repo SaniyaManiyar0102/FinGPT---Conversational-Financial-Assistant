@@ -67,15 +67,3 @@ streamlit run app.py
 3. **Get instant answers!**
 
 ---
-
-## 📢 Disclaimer
-
-> This tool is for informational purposes only and does **not** provide financial advice.
-
----
-
-## 📄 License
-
-MIT License
-
----
