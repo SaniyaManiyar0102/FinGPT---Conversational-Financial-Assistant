@@ -1,69 +1,64 @@
-# 💼 FinGPT – Conversational Financial Statement Assistant
+# 🧠💸 FinGPT — Conversational Financial Statement Assistant
 
-Welcome to **FinGPT**, your AI-powered assistant for understanding and querying your financial or bank statements!  
-Built with **Streamlit**, **LangChain**, **OpenRouter**, and **FAISS** for blazing-fast, intelligent document Q&A.
+Welcome to **FinGPT**, your AI-powered assistant for understanding and querying financial or bank statements.  
+Built with Streamlit, LangChain, OpenRouter, and FAISS for blazing-fast, intelligent document Q&A. 🚀
 
----
+Features ✨
+- 📄 Upload PDF Statements: Instantly process your bank or financial PDFs.
+- 💬 Conversational Q&A: Ask questions in natural language and get clear, concise answers.
+- 🔍 Semantic Search: Finds relevant information using advanced vector search (FAISS).
+- 🔒 Secure: Keep API keys in a local .env for privacy.
+- ⚡ Fast & Easy: No heavy setup — upload and chat!
 
-## 🚀 Features
+Project Structure 📂
+- app.py — Main Streamlit app 🖥️
+- load_pdf.py — PDF loader & splitter 📑
+- vector_store.py — FAISS vector index creator 🧾
+- QAchain.py — Conversational retrieval/check logic 🤖
+- requirement.txt — Python dependencies 🐍
+- .env — Environment variables (API keys) 🔑
 
-- **📄 Upload PDF Statements:** Instantly process your bank or finance PDFs.
-- **💬 Conversational Q&A:** Ask questions in natural language and get clear, concise answers.
-- **🔍 Semantic Search:** Finds relevant information using advanced vector search (FAISS).
-- **🔒 Secure:** API keys managed via `.env` for your privacy.
-- **⚡ Fast & Easy:** No setup hassle—just upload and chat!
+Getting Started 🚦
 
----
-## 🗂️ Project Structure
-
-- `app.py` — Main Streamlit app
-- `load_pdf.py` — PDF loader & splitter
-- `vector_store.py` — FAISS vector index creator
-- `QAchain.py` — Conversational retrieval chain setup
-- `requirement.txt` — Python dependencies
-
----
-
-## 🛠️ Getting Started
-
-### 1. Prerequisites
-
+1. Prerequisites ✅
 - Python 3.8+
-- [OpenRouter API key](https://openrouter.ai/)
+- OpenRouter API key (or other model provider key) 🔑
 
-### 2. Installation
+2. Installation 🛠️
 
-```sh
-git clone <your-repo-url>
-cd <your-repo-directory>
+Clone the repository, change into the project directory, and install dependencies:
+
+```bash
+git clone https://github.com/SaniyaManiyar0102/FinGPT---Conversational-Financial-Assistant.git
+cd FinGPT---Conversational-Financial-Assistant
 pip install -r requirement.txt
 ```
 
-### 3. Configuration
+3. Configuration ⚙️
 
-Create a `.env` file in the project root:
+Create a `.env` file in the project root (if it doesn't already exist) and add your API keys. Example:
 
-```
+```env
 OPENROUTER_API_KEY=your_openrouter_api_key
-OPENAI_API_BASE=https://openrouter.ai/api/v1
+OPENAI_API_BASE=https://api.openai.com/v1
 ```
 
-### 4. Run the App
+(Adjust variable names/values to match the provider you're using.) 📝
 
-```sh
+4. Run the App ▶️
+
+Start the Streamlit app:
+
+```bash
 streamlit run app.py
 ```
 
+Example Usage 🧩
+1. Upload your PDF statement. 📤  
+2. Ask questions like:
+   - "What was my total spending last month?" 💸
+   - "List all transactions over $500." 🧾
+   - "What is my current balance?" 📊  
+3. Get instant answers! ⚡
 ---
-
-## ✨ Example
-
-1. **Upload** your PDF statement.
-2. **Ask:**  
-   - "What was my total spending last month?"  
-   - "List all transactions over $500."  
-   - "What is my current balance?"
-
-3. **Get instant answers!**
-
----
+Happy building! 💬🔧
